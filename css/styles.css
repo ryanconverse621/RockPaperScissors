@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+}
+
+/* Heading */
+.heading {
+    background-color: navy;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.heading h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Choice */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0rem;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    padding: 20px;
+    height: 275px;
+}
+
+.images {
+    /* width: 20%; */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.images > img { 
+    width: 3rem;
+}
+.images img:nth-of-type(1) {
+    opacity: 50%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.images img:nth-of-type(2) {
+    opacity: 50%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.images img:nth-of-type(3) {
+    opacity: 50%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.images img:hover {
+    opacity: 100%;
+}
+
+/* Hr */
+hr {
+    border-color: black;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
+/* Results */
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.results h1, h2 {
+    margin-top: 5px;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    width: 30%;
+    margin: auto;
+}
+
+.record {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.record p {
+    font-size: 20px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+/* Reset */
+.reset {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 1080px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,34 @@
+function runGame(x) {
+    let playerChoice = x;
+    
+    let computerChoice = Math.floor(Math.random() * 2 + 1); Math.floor(Math.random() * 3 + 1 for rock paper scissors)
+
+    let flipResult;
+
+    if (computerChoice === 1) {
+        flipResult = 'tails';
+    } else if (randNum === 2) {
+        flipResult = 'heads';
+    } else {
+        flipResult = "There was an error";
+    }
+    
+    let gameResult;
+
+    if (playerChoice === flipResult) {
+        gameResult = 'WIN';
+    } else {
+        gameResult = 'LOSE';
+    }
+
+    let prediction = document.getElementById('prediction');
+    prediction.innerText = playerChoice;
+
+    let flip = document.getElementById('flip');
+    flip.innterText = flipResult;
+
+    let result = document.getElementById('result');
+    result.innerText = gameResult;
+
+
+}

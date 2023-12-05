@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/norm.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="heading">
+        <header>
+            <h1>Rock Paper Scissors Game</h1>
+        </header>
+    </section>
+    <main class="choice">
+        <section class="playerChoice">
+            <div class="images">
+                <img id="rock-img" src="svg/rock.svg" alt="Rock" onclick="play(1)">
+                <img id="paper-img" src="svg/paper.svg" alt="Paper" onclick="play(2)">
+                <img id="scissors-img" src="svg/scissors.svg" alt="Scissors" onclick="play(3)">
+            </div>
+        </section>
+        <section class="computerChoice">
+            <img id="dot-img" src="svg/dot.svg" alt="dot">
+        </section>
+    </main>
+    <hr>
+    <section class="results">
+        <h1 id="result">Result</h1>
+        <h2 id="verdict"></h2>
+    </section>
+    <section class="scoreboard">
+        <h1>W/L/T</h1>
+        <div class="record">
+            <p id="wins">0</p>
+            <p>-</p>
+            <p id="losses">0</p>
+            <p>-</p>
+            <p id="ties">0</p>
+        </div>
+    </section>
+    <div class="reset"> 
+        <button onclick="reset()">Reset</button>
+    </div>
+    
+</body>
+</html>
