@@ -23,6 +23,7 @@ function play(choice) {
     setTimeout(() => {
         switch (compChoice) {
           case 1:
+            document.getElementById('dot-img').style.width = "25%";
             document.getElementById('dot-img').src = "svg/rock.svg";
             switch (playerChoice) {
               case 1: 
@@ -46,6 +47,7 @@ function play(choice) {
             }
             break;
           case 2:
+            document.getElementById('dot-img').style.width = "40%";
             document.getElementById('dot-img').src = "svg/paper.svg";
             switch (playerChoice) {
               case 1: 
@@ -69,6 +71,7 @@ function play(choice) {
             }
             break;
           case 3:
+            document.getElementById('dot-img').style.width = "27%";
             document.getElementById('dot-img').src = "svg/scissors.svg";
             switch (playerChoice) {
               case 1: 
@@ -112,4 +115,6 @@ function reset() {
   document.getElementById('result').innerHTML = "Result";
   document.getElementById('verdict').innerHTML = "";
   document.getElementById('verdict').style.color = 'black';
+  document.getElementById('dot-img').style.width = "";
+
 }
